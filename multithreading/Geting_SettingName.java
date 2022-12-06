@@ -22,7 +22,7 @@ public class Geting_SettingName {
 		
 		Thread.currentThread().setName("Mobin");
 		
-		System.out.println(10/0);
+		//System.out.println(10/0);
 		
 		
 		
