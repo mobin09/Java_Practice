@@ -8,10 +8,16 @@ public class ThrowKeywordExample {
 		*/
 	}
 	
+	static void withThrow() {
+		throw new ArithmeticException("It is raqised bcz you divide by 0"); // we creating the exception object
+		// manually---explicitly
+	}
+	
+	
 	public static void main(String[] args) {
 		
-		withoutThrow();
-		
+		//withoutThrow();
+		withThrow();
 
 	}
 
