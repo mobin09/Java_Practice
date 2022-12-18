@@ -13,12 +13,19 @@ public class ThrowKeywordExample {
 		// manually---explicitly
 	}
 	
+    static void checkEligibility(int age) {
+    	if(age < 18) {
+    		throw new ArithmeticException("Invalid Age");
+    	} else {
+    		System.out.println("Eligible for the vote !!");
+    	}
+    } 
 	
 	public static void main(String[] args) {
 		
 		//withoutThrow();
-		withThrow();
-
+		//withThrow();
+		checkEligibility(13);
 	}
 
 }
