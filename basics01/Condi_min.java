@@ -23,13 +23,30 @@ public class Condi_min {
 		return y;
 	}
 	
-	
+   static int findmin(int a, int b, int c) {
+	   if(a < b) {
+		    if(a < c) {
+		    	return a;
+		    }else {
+		    	return c;
+		    } 
+		    
+	   }else if(b < a) {
+		  return b;
+		   
+	   }else {
+		   return c ;
+	   }
+	   
+	  
+	   
+   }	
 	
 	public static void main(String[] args) {
-		  int min = findM(4,4,4);
-          System.out.println(min);
-		int x = Math.min(0, 0);
-		System.out.println(x);
+//		  int min = findM(4,4,4);
+//          System.out.println(min);
+//		  int x = Math.min(0, 0);
+//		  System.out.println(x);
 	}
 
 }
