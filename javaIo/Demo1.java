@@ -21,7 +21,24 @@ public class Demo1 {
 		File a = new File(m, "demo.txt");
 		a.createNewFile();
 		
-		System.out.println("Done");
+		//System.out.println("Done");
+		//System.out.println(m.isDirectory());
+		//System.out.println(a.isFile());
+		
+//		File fl = new File("K:\\");
+//		String[] st= fl.list();
+//		for(String str: st) {
+//			//System.out.println(str);
+//		}
+		
+		long l = f.length();
+		System.out.println(l);
+		
+		//f.delete();
+		m.delete();
+		//a.delete();
+		//abc.delete();
+		
 		
 
 	}
