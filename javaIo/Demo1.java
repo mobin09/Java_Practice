@@ -5,18 +5,11 @@ import java.io.IOException;
 
 public class Demo1 {
 
-	
-	
-	
 	public static void main(String[] args) throws IOException {
-		String abc = "abc.txt";
-		File file = new File(abc);
-
-		System.out.println(file.exists());
-		file.createNewFile(); // file created, if exist not created
-
-		System.out.println(file.exists());
-		
+		File f = new File("abc.txt");
+		System.out.println(f.exists());
+		f.createNewFile();
+		System.out.println(f.exists());
 
 	}
 
