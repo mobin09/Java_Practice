@@ -7,7 +7,8 @@ public class FileWriterDemo1 {
 
 	public static void main(String[] args) {
 		try {
-			FileWriter fw = new FileWriter("abc.txt");
+			FileWriter fw = new FileWriter("abc.txt");// overide the data
+			//FileWriter fw = new FileWriter("abc.txt", true); // this will append the data to file
 			fw.write(65);
 			fw.write("\nMobin\nArshad");
 			fw.write('\n');
