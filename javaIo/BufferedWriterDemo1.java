@@ -6,7 +6,7 @@ public class BufferedWriterDemo1 {
 
 	public static void main(String[] args) {
 		try {
-		FileWriter fw = new FileWriter("abc1.txt");
+		FileWriter fw = new FileWriter("abc1.txt", true);
 		BufferedWriter bw = new BufferedWriter(fw);
 		bw.write(65);
 		bw.newLine();
