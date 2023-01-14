@@ -19,13 +19,11 @@ public class FileMerger2 {
 				line1 = br1.readLine();
 
 			}
-			
 
 			if (line2 != null) {
 				pw.println(line2);
 				line2 = br2.readLine();
 			}
-			
 
 		}
 
