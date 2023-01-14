@@ -8,35 +8,33 @@ public class RemoveDuplicateNo {
 		PrintWriter pw = new PrintWriter("output.txt");
 		BufferedReader br = new BufferedReader(new FileReader("input.txt"));
 		String line = br.readLine();
-		
-		while(line != null) {
-			BufferedReader br2 = new BufferedReader(new FileReader("output.txt")); 
+
+		while (line != null) {
+			BufferedReader br2 = new BufferedReader(new FileReader("output.txt"));
 			String line2 = br2.readLine();
 			boolean isAvailable = false;
-			
-			while(line2 != null) {
-				
-				if(line.equals(line2)) {
+
+			while (line2 != null) {
+
+				if (line.equals(line2)) {
 					isAvailable = true;
 					break;
 				}
-				
+
 				line2 = br2.readLine();
 			}
-			
-			
-			if(isAvailable == false) {
+
+			if (isAvailable == false) {
 				pw.println(line);
 				pw.flush();
 			}
-			
+
 			br2.close();
-			
+
 			line = br.readLine();
-			
+
 		}
-		
-		
+
 		pw.flush();
 		pw.close();
 		br.close();
