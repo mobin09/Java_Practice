@@ -11,8 +11,11 @@ public class Demo2 {
 		f.createNewFile();
 		System.out.println(f.exists());
 		
+		File f2 = new File("IPLTeams");
+		System.out.println(f2.exists());
+		f2.mkdir();
+		System.out.println(f2.exists());
 		
-
 	}
 
 }
