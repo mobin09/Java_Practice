@@ -2,6 +2,8 @@ package javaIo;
 
 import java.io.*;
 
+import java.util.*;
+
 public class Demo4 {
 
 	public static void main(String[] args) throws IOException {
@@ -16,6 +18,9 @@ public class Demo4 {
 		fw.close();
 		
 		System.out.println("Open abc.txt to see the result");
+		
+		
+		
 		
         
 	}
