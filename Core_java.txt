@@ -1,0 +1,24 @@
+CORE JAVA
+===========
+
+Java Shell (JShell)
+-------------------
+  The java Shell tool (jshell) is an interactive tool for learning the java application in the java
+  programming language and prototyping java code. JShell is a Read-Evaluate-Print-Loop (REPL),
+  which evaluates declarations, statements and expressions as they are entered and immediately shows the result.
+  The tool is run from the command line
+  e.g:
+		C:\Users\mobin>jshell
+		|  Welcome to JShell -- Version 17.0.5
+		|  For an introduction type: /help intro
+
+		jshell> 2+3
+		$1 ==> 5
+
+		jshell> $1
+		$1 ==> 5
+
+		jshell>
+		
+main() method
+--------------		
