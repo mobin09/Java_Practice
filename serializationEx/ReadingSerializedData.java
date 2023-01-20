@@ -22,7 +22,8 @@ public class ReadingSerializedData {
 				  System.out.println("Name:" +r.name +" Age: " + r.age);
 			  }
 			 
-			o = ois.readObject();
+			 
+			o = ois.readObject(); // we will get the Exception at this line --: java.io.EOFException
 			 
 		 }
 		  
