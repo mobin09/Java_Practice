@@ -17,7 +17,8 @@ public class InheritanceSerializationEx2 {
 	public static void main(String[] args) throws Exception{
 		
 		Hen h = new Hen();
-		
+//		h.leg = 4;
+//		h.tail = 4;
 		FileOutputStream fos =new FileOutputStream("abc.txt");
 		ObjectOutputStream oos = new ObjectOutputStream(fos);
 		oos.writeObject(h);
