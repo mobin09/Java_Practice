@@ -24,6 +24,9 @@ public class Demo9 {
 		}
 		
 
+		if(true);
+		    int c = 5;	
+		
 	}
 
 }
