@@ -30,6 +30,9 @@ public class OverridingExampl1 {
 		C child = new C();
 		child.marry();
 
+		Parent p = new C();
+		p.marry();
+		
 	}
 
 }
