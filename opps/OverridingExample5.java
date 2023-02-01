@@ -9,10 +9,13 @@ class P6{
 
 
 class C6 extends P6{
-	public void m1(int x) { // it is the example of overloading not overriding
-		System.out.println("Child");
-	}
+//	public void m1(int x) { // it is the example of overloading not overriding
+//		System.out.println("Child");
+//	}
 	
+	public void m1(int... y) {
+		System.out.println("child");
+	}
 	
 	
 	
