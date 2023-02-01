@@ -18,7 +18,18 @@ public class OverrideExample4 {
 
 	public static void main(String[] args) {
 		
-
+       System.out.println(Short.MIN_VALUE +" " + Short.MAX_VALUE);
+       
+       double r, pi, a;
+       r = 9.8;
+       pi = 3.14;
+       a = pi * r * r;
+       System.out.println(a);
+       
+       System.out.print(10  *  20 + "Quiz ");
+       System.out.println("Quiz" + 10 * 20);
+       
+       
 	}
 
 }
