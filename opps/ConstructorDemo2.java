@@ -8,7 +8,7 @@ public class ConstructorDemo2 {
 		count++;
 	}
 	
-	ConstructorDemo2(){
+  	ConstructorDemo2(){
 		// ...
 	}
 	ConstructorDemo2(int i){
@@ -17,6 +17,8 @@ public class ConstructorDemo2 {
 	ConstructorDemo2(double d){
 		//...
 	}
+	
+
 	
 	public static void main(String[] args) {
 		ConstructorDemo2  o1 = new ConstructorDemo2();
