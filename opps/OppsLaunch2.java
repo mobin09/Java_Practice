@@ -1,0 +1,21 @@
+package opps;
+
+public class OppsLaunch2 {
+    int i = 10;
+	public static void main(String[] args) {
+		// System.out.println(i); //static methods only access the static value
+		// other wise we need to create it object
+		OppsLaunch2 o = new OppsLaunch2();
+		System.out.println(o.i);
+		
+		o.callMethod();
+		
+
+	}
+	
+	void callMethod() {
+		System.out.println(i);
+	}
+	
+
+}
