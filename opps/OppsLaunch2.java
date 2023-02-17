@@ -10,12 +10,31 @@ public class OppsLaunch2 {
 		
 		o.callMethod();
 		
+		int d;
+		d=10;
+		System.out.println(d);
+		
+		
+		int x = 10;
+	final int y = 20;
+		switch(x) {
+		case 10:
+			System.out.println("Hello");
+			break;
+			
+		case y:
+			System.out.println("Hiii");
+			break;
+		}
+		
 
 	}
 	
 	void callMethod() {
 		System.out.println(i);
 	}
+	
+	
 	
 
 }
