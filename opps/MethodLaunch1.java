@@ -32,6 +32,15 @@ public class MethodLaunch1 {
 		 
 		}
 		
+		Integer m =0;
+		Integer n = 0;
+		
+		for(Short s = 0; s<5; s++)
+			if((++m)>2|| (++n)>2)
+				m++;
+		System.out.println(m +" " + n );
+				 
+		
 		
 
 	}
