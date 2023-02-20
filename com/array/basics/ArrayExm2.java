@@ -26,8 +26,9 @@ public class ArrayExm2 {
 			System.out.println();
 		}
 		
+		while(true);
 		
-
+		
 	}
 
 }
