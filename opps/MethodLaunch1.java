@@ -31,9 +31,9 @@ public class MethodLaunch1 {
 		  case 2: System.out.println("2");
 		 
 		}
-		
-		Integer m =0;
-		Integer n = 0;
+		//s=0,1,2,3,4
+		Integer m =0; //1,2,3,4,5,6,7,8 
+		Integer n = 0; //1,2
 		
 		for(Short s = 0; s<5; s++)
 			if((++m)>2|| (++n)>2)
