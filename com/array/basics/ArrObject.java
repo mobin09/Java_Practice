@@ -10,6 +10,8 @@ class Fan{
 public class ArrObject {
 
 	public static void main(String[] args) {
+		int[] a = new int[] {3,4,5};
+		int[] b = {3,4,6};
 		Fan[] f = new Fan[3];
 		f[0] = new Fan();
 		f[1] = new Fan();
