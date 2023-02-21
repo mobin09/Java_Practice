@@ -17,7 +17,7 @@ public class TakingInput {
 		int students = sc.nextInt();
 		int[] marks = new int[students];
 		System.out.println("Enter the marks of " + students + " Students" );
-		for(int i=0; i<students; i++) {
+		for(int i=0; i<marks.length; i++) {
 			marks[i] = sc.nextInt();
 		}
 		
