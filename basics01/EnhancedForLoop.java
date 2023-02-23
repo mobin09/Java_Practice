@@ -31,6 +31,14 @@ public class EnhancedForLoop {
         	 }
          }
  
+     // find every alernative lements
+         for(int i=0; i<arr.length; i+=2) {
+        	 System.out.println(arr[i]);
+         }
+         
+         int []dx[] = {{1,2,3,4}}; // valid
+         
+         
 	}
 
 }
