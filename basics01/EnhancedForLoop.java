@@ -17,7 +17,19 @@ public class EnhancedForLoop {
         	 }
         	 
         	 System.out.println();
-         }		 
+         }
+         
+         int[][][] elements = {{{10, 30,40}, {50, 60}, {5,1},{100}}};
+         for(int[][] x: elements) {
+        	 for(int[] b:x) {
+        		 for(int c:b) {
+        			 System.out.print(c+" ");
+        		 }
+        		 
+        		 System.out.println();
+        		 
+        	 }
+         }
  
 	}
 
