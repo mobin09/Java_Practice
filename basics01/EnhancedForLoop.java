@@ -37,6 +37,38 @@ public class EnhancedForLoop {
          }
          
          int []dx[] = {{1,2,3,4}}; // valid
+         int[] ad = new int['a'];
+         
+         // write a program to get sum of all arrays
+         
+         int sum = 0;
+         for(int i=0; i<arr.length; i++) {
+        	 sum += arr[i];
+         }
+         
+         System.out.println("SUM is: "+ sum);
+         
+         
+         // write a program to get minimum and maximum value of array;
+         
+         int min = arr[0];
+         int max = arr[0];
+         
+         for(int i=0; i<arr.length; i++) {
+        	 if(min > arr[i]) {
+        		 min = arr[i];
+        	 }
+        	 
+        	 if(max < arr[i]) {
+        		 max = arr[i];
+        	 }
+        	 
+         }
+         
+         System.out.println("MIN: "+ min +" MAX: "+ max);
+         
+         
+         
          
          
 	}
