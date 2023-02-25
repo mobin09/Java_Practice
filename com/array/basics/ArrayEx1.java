@@ -39,9 +39,9 @@ public class ArrayEx1 {
 		System.out.println(a);
 		
 		int[] abc = {10, 50, 6, 7};
-		ArrayList ab = (ArrayList) Arrays.asList(abc);
+		//ArrayList ab = (ArrayList) Arrays.asList(abc);
 		
-		System.out.println(ab);
+		//System.out.println(ab);
 		
 	}
 
