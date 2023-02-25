@@ -17,7 +17,7 @@ class Test2 {
 		if(true) {
 			System.out.println("Hello");
 		}else {
-			System.out.println("Hii");
+			System.out.println("Hii"); // Dead code
 		}
 		
 	}
