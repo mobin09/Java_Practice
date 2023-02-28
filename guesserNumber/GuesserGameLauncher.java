@@ -11,6 +11,12 @@ class Guesser {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Guesser Please Guess the Number");
 		guessNumber = sc.nextInt();
+		
+		while (guessNumber > 10 || guessNumber <= 0) { // Range to Guess the Number
+			System.out.println("Incorrect Input");
+			System.out.println("Allowed Range is 1 - 10 please Guess again");
+			guessNumber = sc.nextInt();
+		}
 
 		return guessNumber;
 	}
@@ -19,12 +25,17 @@ class Guesser {
 
 class Player {
 	int playerGuess;
-	
+
 	int playerNumber() {
 		@SuppressWarnings("resource")
 		Scanner scm = new Scanner(System.in);
 		System.out.println("Player Please Guess the Number");
 		playerGuess = scm.nextInt();
+		while (playerGuess > 10 || playerGuess <= 0) { // Range to Guess the Number
+			System.out.println("Incorrect Input");
+			System.out.println("Allowed Range is 1 - 10 Player Guess Again");
+			playerGuess = scm.nextInt();
+		}
 		return playerGuess;
 	}
 
@@ -57,10 +68,9 @@ class Umpire {
 				System.out.println("All Players WIN the Game");
 			} else if (numFromGuesser == numFromPlayer2) {
 				System.out.println("Player 1 and Player 2 WIN the game ");
-			} else if(numFromGuesser == numFromPlayer1) {
+			} else if (numFromGuesser == numFromPlayer1) {
 				System.out.println("Player 1 and Player 3 WIN the Game");
-			} 
-			else {
+			} else {
 				System.out.println("Player 1 WIN the game");
 			}
 
