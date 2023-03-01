@@ -16,7 +16,16 @@ class Test4 {
         }else {
         	System.out.println("false"+ x);
         }
-        
+// Snippet 6        
+       int num = 5;
+       do {
+    	   System.out.println(num-- +" ");
+       }while(num ==0);
+      
+      int y;
+      
+       
+       
         		
 	}
 
