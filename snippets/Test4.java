@@ -8,6 +8,15 @@ class Test4 {
 		boolean res = a++ == 7 && ++a == 9 || a++ == 9;
         System.out.println("a:"+ a);
         System.out.println("res:"+ res);
+//Snippet 5        
+        
+        int x = 9;
+        if(x++ <10) {
+        	System.out.println("true"+ x);
+        }else {
+        	System.out.println("false"+ x);
+        }
+        
         		
 	}
 
