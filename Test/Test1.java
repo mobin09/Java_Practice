@@ -13,6 +13,14 @@ class Test1 {
 		
 	      }
      }
+		
+    int[] nums1 = {1,2,3};
+    int[] nums2 = {1,2,3,4,5,5};
+    nums2 = nums1;
+    
+    for(int x: nums2)
+    	 System.out.print(x + " ");
+		
 
 }
 
