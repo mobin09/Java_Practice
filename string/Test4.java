@@ -11,6 +11,8 @@ package string;
  * replaceFirst(String regex, String replacement)
  * toUpperCase()
  * toLowerCase()
+ * indexOf()
+ * lastIndexOf()
  * 
  */
 
@@ -38,6 +40,12 @@ class Test4 {
 		String name = "Mobin Arshad";
 		System.out.println(name.toUpperCase());
 		System.out.println(name.toLowerCase());
+		
+		String str4 = "I want to become master in full stack java developer along with devops tech";
+		System.out.println(str4.indexOf("java"));
+		System.out.println(str4.lastIndexOf("tech"));
+		
+		
 
 	}
 
