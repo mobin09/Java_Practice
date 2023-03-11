@@ -15,6 +15,9 @@ class Test6 {
 		sb2.delete(1, 3);
 		System.out.println(sb2);
 		
+		StringBuffer sb3 = new StringBuffer("niboM");
+		sb3.reverse();
+		System.out.println(sb3);
 
 	}
 
