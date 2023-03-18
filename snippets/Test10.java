@@ -11,8 +11,9 @@ package snippets;
 		System.out.println(!flag1 == flag2 != flag3 == !flag4);
 		System.out.println(flag1 = flag2 != flag3 == !flag4);
 		
-		
-		
+		if(false)
+			System.out.print(flag4);
+		System.out.println("Hello wolrd");
 	}
 
 }
