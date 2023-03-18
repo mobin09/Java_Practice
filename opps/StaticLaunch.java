@@ -3,6 +3,7 @@ package opps;
 class Demo3 {
 	static int a;
 	static int b;
+	//int m=20;
 	static {
 		System.out.println("Static Block");
 		a = 10;
@@ -13,6 +14,7 @@ class Demo3 {
 		System.out.println("Static Method");
 		System.out.println(a);
 		System.out.println(b);
+		
 	}
 	
 	int x;
