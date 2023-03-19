@@ -29,6 +29,7 @@ class FarmerLoan{
 }
 public class LaunchLoan {
 	public static void main(String[] args) {
+	
 		FarmerLoan f1 = new FarmerLoan();
 		f1.input();
 		f1.compute();
