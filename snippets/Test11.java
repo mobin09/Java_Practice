@@ -27,7 +27,19 @@ class Counter{
 	   System.out.println(Counter.numOfObjects);
 	   
 	   String str = "UP TO DATE";
-	   System.out.println(str.join("-", str.split(" ")));
+	   System.out.println(String.join("-", str.split(" ")));
+	   
+	   String[] s = {"abc", null, "df"};
+	   String x = "";
+	   for(String a: s) {
+		   x += String.join("-", s);
+	   }
+	   
+	   System.out.println(x);
+	   
+	   
+	   
+	  
 	   
 
 	}
