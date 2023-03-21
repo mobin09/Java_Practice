@@ -33,6 +33,26 @@ class Test13 {
 			System.out.println(o);
 		}
 		
+		String a = "M";
+		System.out.println(a.repeat(5));
+		
+		
+		System.out.println("   Mobin Arshad  ".trim());
+		System.out.println("    Mobin Arshad Khna    ".strip());
+		
+		System.out.println("mobin".toUpperCase() == "MOBIN");
+		
+		String str = "   ";
+		System.out.println(str.isBlank());
+		System.out.println(str.isEmpty());
+		
+		String ab = "Mobin Arshad Khan";
+		System.out.println(ab.substring(8, 4));
+		
+		
+		
+		
+		
 	}
 
 }
