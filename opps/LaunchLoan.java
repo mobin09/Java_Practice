@@ -1,6 +1,9 @@
 package opps;
 import java.util.Scanner;
 
+
+
+
 class FarmerLoan{
 	private double principle;
 	private static double rInterest;
