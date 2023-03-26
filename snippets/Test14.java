@@ -17,6 +17,12 @@ class Test14 {
 		String s2 = "Java";
 		System.out.println(s1 == s2);
 		
+		String s3 = sb.toString();
+		System.out.println(s1 == s2);
+		
+		StringBuilder sb1 = new StringBuilder();
+		System.out.println(sb1.append("").append("").append("").length());
+		
 		
 	}
 
