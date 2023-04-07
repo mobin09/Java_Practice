@@ -13,8 +13,13 @@ class LG implements Remote{
 }
 
 public class LaunchIRemote {
+	static int x ;
+	final static int y = 10;
 	public static void main(String[] args) {		
 		LG lg = new LG();
 		lg.print();
+		
+		System.out.println(x);
+		
 	}
 }
