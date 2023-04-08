@@ -32,9 +32,14 @@ public class LaunchWrapperDemo1 {
 		boolean c1 = Boolean.parseBoolean(c);
 		System.out.println(c1);
 		
+		Integer m = 40;
 		
-		
-      
+		System.out.println(m.byteValue());
+		System.out.println(m.shortValue());
+		System.out.println(m.intValue());
+		System.out.println(m.longValue());
+		System.out.println(m.floatValue());
+		System.out.println(m.doubleValue());		      
 		
 	}
 
