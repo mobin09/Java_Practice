@@ -39,7 +39,13 @@ public class LaunchWrapperDemo1 {
 		System.out.println(m.intValue());
 		System.out.println(m.longValue());
 		System.out.println(m.floatValue());
-		System.out.println(m.doubleValue());		      
+		System.out.println(m.doubleValue());		    
+		
+		Character ch = 'M';
+		char ch1 = ch.charValue();
+		System.out.println(ch1);
+
+		
 		
 	}
 
