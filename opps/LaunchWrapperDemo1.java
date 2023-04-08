@@ -45,8 +45,16 @@ public class LaunchWrapperDemo1 {
 		char ch1 = ch.charValue();
 		System.out.println(ch1);
 
+		Boolean b12 = true;
+		boolean b2 =b12.booleanValue();
+		System.out.println(b2);
 		
-		
+		int i = Integer.parseInt("10");
+		boolean b5 = Boolean.parseBoolean("Mobin");
+		double d = Double.parseDouble("10.01");
+		System.out.println(i);
+		System.out.println(b5);
+		System.out.println(d);
 	}
 
 }
