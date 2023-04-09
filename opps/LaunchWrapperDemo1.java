@@ -55,6 +55,29 @@ public class LaunchWrapperDemo1 {
 		System.out.println(i);
 		System.out.println(b5);
 		System.out.println(d);
+		
+		Integer y = 10;
+		String z= y.toString();
+		System.out.println(z);
+		
+		//String Binary 
+		String s1 = Integer.toString(7, 2);
+		System.out.println(s1);
+		String s2 = Integer.toString(117, 2);
+		System.out.println(s2);
+		
+		String s3 = Integer.toBinaryString(20);
+		System.out.println(s3);
+		String s4 = Integer.toOctalString(140);
+		System.out.println(s4);
+		String s5 = Integer.toHexString(15098765);
+		System.out.println(s5);
+		
+		Integer ii = Integer.valueOf(10);
+		Boolean b1 = Boolean.valueOf(true);
+		if(b1) {
+			System.out.println("Hello");
+		}
 	}
 
 }
