@@ -1,7 +1,7 @@
 package opps;
 
 public class LaunchWrapperDemo1 {
-
+    static Integer i2;
 	public static void main(String[] args) {
 		//1. Integer
 //		Integer i = new Integer(10); // deprecated from jdk 9
@@ -78,6 +78,31 @@ public class LaunchWrapperDemo1 {
 		if(b1) {
 			System.out.println("Hello");
 		}
+		
+		//int i3 = i2; // nullPointerException bcz of Integer default value is null
+		System.out.println(i2);
+		// All wrapper class is immutable
+		Integer i3 = 10;
+		Integer i4 = i3;
+		i3++;
+		System.out.println(i3);
+		System.out.println(i4);
+		System.out.println(i3 == i4);
+		
+		Integer i5= 10;
+		Integer i6 = 10;
+		System.out.println(i5 == i6);
+		
+		
+		Integer a = 100;
+		Integer a1 = 100;
+		System.out.println(a == a1);
+		
+		Integer z1 = 1000;
+		Integer z2 = 1000;
+		System.out.println(z1 == z2);
+		
+		
 	}
 
 }
