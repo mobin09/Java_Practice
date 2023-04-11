@@ -50,6 +50,13 @@ public class LaunchVarargs {
 		System.out.println("Long parameterized");
 	}
 	
+	public static void m5(Object o) {
+		System.out.println("Object parameterized method");
+	}
+	
+	public static void m5(Number n) {
+		System.out.println("Number parameterized method");
+	}
 	
 	public static void main(String[] args) {
 		LaunchVarargs l = new LaunchVarargs();
@@ -68,6 +75,11 @@ public class LaunchVarargs {
 		m2(c);
         m3(c);
         //m4(c); // CE:
+        m5(c);
+        
+        Long l1 =10l;
+        
+        
 	}
 
 }
