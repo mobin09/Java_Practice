@@ -3,6 +3,7 @@ package collection.coreJava;
 import java.util.Enumeration;
 import java.util.Iterator;
 import java.util.Vector;
+import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.ArrayList;
 class Demo1 {
    public static void main(String[] args) {
@@ -30,8 +31,20 @@ class Demo1 {
 	   Iterator itr =  al.iterator();
 	   while(itr.hasNext()) {
 		   System.out.println(itr.next());
-		   al.add(143); // Fail-Fast (Concurrent Modificarion)
+		   //al.add(143); // Fail-Fast (Concurrent Modificarion)
 	   }
 	   
+	  CopyOnWriteArrayList coal = new CopyOnWriteArrayList(); 
+	  coal.add(100);
+	  coal.add(200);
+	  coal.add(300);
+	  coal.add(400);
+	  
+	  Iterator itrr = coal.iterator();
+	  while(itrr.hasNext()) {
+		  Object ob = itrr.next();
+		  System.out.println(ob);
+		  coal.add(999);
+	  }   
    }
 }
