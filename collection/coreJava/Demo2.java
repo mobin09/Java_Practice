@@ -8,6 +8,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Set;
 
 class Fan {
@@ -104,8 +105,10 @@ class Demo2 {
 		
 		Set s2 = map.entrySet();
 		Iterator itr3 = s2.iterator();
-		while(itr3.hasNext()) {		
-			System.out.println(itr3.next());
+		while(itr3.hasNext()) {	
+			Map.Entry<Integer, String> m = (Entry<Integer, String>) itr3.next();
+			System.out.println(m);
+			System.out.println(m.getKey() +":"+m.getValue());
 			
 		}
 
