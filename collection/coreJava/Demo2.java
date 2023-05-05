@@ -1,10 +1,14 @@
 package collection.coreJava;
 
+import java.util.Collection;
+
 // Map<K, V>
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Set;
 
 class Fan {
 	private int wings;
@@ -71,6 +75,38 @@ class Demo2 {
 			Fan f = fmap.getValue();
 			System.out.println(
 					"Fan info:\nWings:" + f.getWings() + ",Power in Watt:" + f.getPower() + ",Star:" + f.getRating());
+		}
+		
+		HashMap<Integer, String> map = new HashMap<>();
+		map.put(1, "Core Java");
+		map.put(2, "Servlet/JSP");
+		map.put(3, "Spring");
+		map.put(4, "Spring Boot");
+		map.put(5, "Web MVC");
+		map.put(6, "Microservices");
+		map.put(7, "MySQL");
+		map.put(8, "JDBC");
+		map.put(9, "Hibernate");
+		
+//		Collection<String> c = map.values();
+//		Iterator itr= c.iterator();
+//		while(itr.hasNext()) {
+//			//System.out.println(itr.next());
+//		}
+		
+		Set s = map.keySet();
+		Iterator itr2 = s.iterator();
+		while(itr2.hasNext()) {
+			System.out.print(itr2.next() + " ");
+		}
+		
+		System.out.println("=========================");
+		
+		Set s2 = map.entrySet();
+		Iterator itr3 = s2.iterator();
+		while(itr3.hasNext()) {		
+			System.out.println(itr3.next());
+			
 		}
 
 	}
