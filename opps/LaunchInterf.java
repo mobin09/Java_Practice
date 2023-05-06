@@ -4,15 +4,15 @@ interface Interf1{
 	 void teaches();// all interface by default public and abstract
 	 void writeCodes();
 	 
-	 default void hi() { // participates in inheritance
+	 default void m1() { // participates in inheritance
 		 System.out.println("from java 8 onwards normal method is allowed");
 	 }
 	 
-	 static void ya() { // will not participate in inheritance
+	 static void m2() { // will not participate in inheritance
 		 System.out.println("with static method we can also create the method with implementation");
 	 }
 	 
-	 private void m1() { // java 9
+	 private void m3() { // java 9
 		 System.out.println("I am private method");
 	 }
 	 
@@ -36,9 +36,9 @@ public class LaunchInterf {
 
 	public static void main(String[] args) {
 		Students12 st1 = new Students12();
-		st1.hi();
+		st1.m1();
       
-		Interf1.ya(); 
+		Interf1.m2(); 
         
 	}
 
