@@ -1,0 +1,20 @@
+
+class TestClass{
+	// I am the class
+}
+
+interface TestInterface{
+	// I am the TestInterface
+}
+
+enum TestEnum{
+	TEST1,
+	TEST2,
+	TEST3
+}
+
+class TestClass2{
+	enum TM{
+		
+	}
+}
