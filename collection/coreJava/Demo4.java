@@ -4,19 +4,28 @@ package collection.coreJava;
 import java.util.ArrayList;
 import java.util.List;
 
-enum Level {
+
+interface ABcd {
+	
+}
+
+class Abcderfg{
+	
+}
+
+enum Level implements ABcd{
 	LOW, MEDIUM,HIGH;
-	Level() {
+	 Level() {
 		System.out.println("enum Level Constructor is called");
 	}
 }
 
 enum Campus {
-	NORTH, SOUTH, EAST, WEST
+	NORTH, SOUTH, EAST, WEST;
 }
 
 enum Gender {
-	MALE, FEMALE, OTHER
+	MALE, FEMALE, OTHER;
 }
 
 class MyGen<T> {
@@ -51,7 +60,20 @@ class Demo4 {
 		System.out.println(gen.get());
 		System.out.println(gen);
 
-		System.out.println(Level.LOW);
+	   Level l = Level.MEDIUM;
+	   String s = l.getClass().getName();
+	   
+	   Level[] lv = Level.values();
+	   for(int i=0; i<lv.length; i++) {
+		   System.out.println(lv[i]);
+	   }
+	   
+	   for(Level lvs: Level.values()) {
+		   System.out.println(lvs.ordinal() + ":" + lvs.name());
+		   
+	   }
+	   
+	   
 
 	}
 
