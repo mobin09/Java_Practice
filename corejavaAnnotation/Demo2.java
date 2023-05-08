@@ -7,7 +7,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 @Target(ElementType.TYPE)
-@Retention(RetentionPolicy.RUNTIME)
+@Retention(RetentionPolicy.RUNTIME) // @Retention is used to specified at what level our annotation is used
 @interface CricketPlayer{
 	String country() default "India";
 	int runs() default 100;
