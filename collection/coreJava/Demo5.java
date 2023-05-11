@@ -27,7 +27,10 @@ public class Demo5 {
     	ts2.add(new StringBuffer("B"));
     	System.out.println(ts2);
     	
-    	
+    	System.out.println("A".compareTo("Z"));
+    	System.out.println("Z".compareTo("K"));
+    	System.out.println("Z".compareTo("Z"));
+    	//System.out.println("Z".compareTo(null)); // NullPointerException
     	
     	
     	
