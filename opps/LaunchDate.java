@@ -1,0 +1,42 @@
+package opps;
+
+
+import static java.lang.Math.sqrt;;
+
+@FunctionalInterface
+interface Dmo{
+	void disp();
+}
+
+interface Dmo1 {
+	int add(int a, int b);
+	void greet();
+}
+
+public class LaunchDate {
+
+	public static void main(String[] args) {
+      System.out.println(Math.max(5, 10));		
+      System.out.println(sqrt(40)); // static import
+
+      Dmo d= ()-> System.out.println("Display something::::::--> U are awesome");
+      d.disp();
+    
+      Dmo1 ad = new Dmo1() {
+    	  public int add(int a, int b) {
+    		  return a+b;
+    	  }
+    	  
+    	  public void greet() {
+    		  System.out.println("Hello Java Inner Class");
+    	  }
+    	  
+      };
+      
+      System.out.println(ad.add(6, 9));
+      ad.greet();
+      
+      
+	}
+
+}
