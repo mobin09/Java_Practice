@@ -6,4 +6,5 @@
  *
  */
 module iNueronCoreJava {
+	requires java.sql;
 }
