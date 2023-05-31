@@ -91,8 +91,8 @@ class Demo1 {
 		System.out.println("Enter the Student ID");
 		int id = 0;
 		try {
-		 id = Integer.parseInt(sc.nextLine());
-		} catch(NumberFormatException e) {
+			id = Integer.parseInt(sc.nextLine());
+		} catch (NumberFormatException e) {
 			System.out.println("Enter the Student ID in number only");
 			id = Integer.parseInt(sc.nextLine());
 		}
@@ -104,8 +104,13 @@ class Demo1 {
 		// System.out.println();
 		String address = sc.nextLine();
 
-		String query = "INSERT INTO students(id, name, course, address) " + "value(" + id + ",'" + sname + "','"
-				+ course + "','" + address + "')";
+//		// First Approach
+//		String query = "INSERT INTO students(id, name, course, address) " + "value(" + id + ",'" + sname + "','"
+//				+ course + "','" + address + "')";
+//		 //String.format
+		String query = String.format("INSERT INTO students(id, name, course, address) value(%d, '%s','%s', '%s')", id,
+				sname, course, address);
+
 		System.out.println(query);
 
 		try {
@@ -130,9 +135,9 @@ class Demo1 {
 	public static void main(String[] args) {
 		// int r= insertData();
 		// System.out.println(r);
-		 getData();
+		getData();
 		// updateData();
-		//insertDataByKey();
+		 //insertDataByKey();
 	}
 
 }
