@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.util.Scanner;
 import java.sql.SQLException;
+import java.sql.ResultSet;
 
 class Demo2 {
 
@@ -47,8 +48,39 @@ class Demo2 {
 		}
 	}
 
+	public static void getDataFromTable() {
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+
+		try {
+			String query = "SELECT id, name, course, address from STUDENTS";
+			con = DBUtils.getConnection();
+			pstmt = con.prepareStatement(query);
+			rs = pstmt.executeQuery();
+			while (rs.next()) {
+				int id = rs.getInt(1);
+				String name = rs.getString(2);
+				String course = rs.getString(3);
+				String add = rs.getString(4);
+				System.out.println("ID: " + id);
+				System.out.println("Name: " + name);
+				System.out.println("Course: " + course);
+				System.out.println("Address: " + add);
+				System.out.println("**************************");
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		finally {
+			DBUtils.cleanUp(con, rs, pstmt);
+		}
+
+	}
+
 	public static void main(String[] args) {
-		insertToTable();
+		//insertToTable();
+		getDataFromTable();
 	}
 
 }

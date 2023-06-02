@@ -42,25 +42,6 @@ public class DBUtils {
 		return con;
 	}
 
-	public static void cleanUp(Connection con, ResultSet rs, PreparedStatement ps) {
-
-		try {
-			if (con != null) {
-				con.close();
-			}
-
-			if (rs != null) {
-				rs.close();
-			}
-
-			if (ps != null) {
-				ps.close();
-			}
-
-		} catch (SQLException e) {
-			e.printStackTrace();
-		}
-	}
 
 	public static void cleanUp(Connection con, ResultSet rs, Statement stmt) {
 		try {
