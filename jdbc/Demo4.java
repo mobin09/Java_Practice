@@ -22,11 +22,14 @@ class Demo4 {
 			pstmt = con.prepareStatement(query);
 			rs = pstmt.executeQuery();
 			System.out.println("\tID \tNAME \t\t\tDOB");
+			SimpleDateFormat sdf = new SimpleDateFormat("dd-MMM-yyyy");
+			
 			while (rs.next()) {
 				int id = rs.getInt(1);
 				String name = rs.getString(2);
 				java.sql.Date d = rs.getDate(3);
-				System.out.println("\t" + id + "\t" + name + "\t" + d);
+				String s = sdf.format(d);
+				System.out.println("\t" + id + "\t" + name + "\t" + s);
 			}
 
 		} catch (SQLException e) {
