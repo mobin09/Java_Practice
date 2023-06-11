@@ -105,35 +105,34 @@ public class StoreImagesToDb {
 			}
 			FileOutputStream fos  = null;
 			try {
-				 fos = new FileOutputStream("E:\\javaCore\\iNueronCoreJava\\images\\abcd.jpg");
+				 fos = new FileOutputStream("E:\\javaCore\\iNueronCoreJava\\images\\Mobin_Arshad.jpg");
 			} catch (FileNotFoundException e) {
 				
 				e.printStackTrace();
 			}
 			
+			byte[] b = new byte[2048];
+			try {
+				while(is.read(b) > 0) {
+					fos.write(b);
+				}
+			} catch (IOException e1) {
+				e1.printStackTrace();
+			}						
 			try {
 				int i = is.read();
 				while(i != -1) {
 					fos.write(i);
 					 i = is.read();
 				}
-			} catch (IOException e) {
-				
+			} catch (IOException e) {				
 				e.printStackTrace();
-			}
-			
-			
-			
+			}									
 		}catch(SQLException e) {
 			e.printStackTrace();
-		}finally {
-			
-		}
-		
-		
-	}
-	
-	
+		}finally {			
+		}	
+	}	
 	public static void main(String[] args) {
 		//soretoDb();
 		getData();
