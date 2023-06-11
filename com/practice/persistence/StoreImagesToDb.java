@@ -1,5 +1,6 @@
 package com.practice.persistence;
 import java.io.File;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -9,6 +10,10 @@ import java.sql.Connection;
 import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.util.Scanner;
+
+//import org.apache.commons.io.IOUtils;
+import org.apache.commons.io.IOUtils;
+
 import java.sql.SQLException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -105,37 +110,46 @@ public class StoreImagesToDb {
 			}
 			FileOutputStream fos  = null;
 			try {
-				 fos = new FileOutputStream("E:\\javaCore\\iNueronCoreJava\\images\\Mobin_Arshad.jpg");
+				 fos = new FileOutputStream("E:\\javaCore\\iNueronCoreJava\\images\\Hello.jpg");
 			} catch (FileNotFoundException e) {
 				
 				e.printStackTrace();
 			}
 			
-			byte[] b = new byte[2048];
+			// Copy from input stream to output stream
+			
+//			byte[] b = new byte[2048];
+//			try {
+//				while(is.read(b) > 0) {
+//					fos.write(b);
+//				}
+//			} catch (IOException e1) {
+//				e1.printStackTrace();
+//			}						
+//			try {
+//				int i = is.read();
+//				while(i != -1) {
+//					fos.write(i);
+//					 i = is.read();
+//				}
+//			} catch (IOException e) {				
+//				e.printStackTrace();
+//			}		
+			
 			try {
-				while(is.read(b) > 0) {
-					fos.write(b);
-				}
-			} catch (IOException e1) {
-				e1.printStackTrace();
-			}						
-			try {
-				int i = is.read();
-				while(i != -1) {
-					fos.write(i);
-					 i = is.read();
-				}
-			} catch (IOException e) {				
+				IOUtils.copy(is, fos);
+			} catch (IOException e) {
 				e.printStackTrace();
-			}									
+			}
+			
 		}catch(SQLException e) {
 			e.printStackTrace();
 		}finally {			
 		}	
 	}	
 	public static void main(String[] args) {
-		//soretoDb();
-		getData();
+		soretoDb();
+		//getData();
 	}
 
 }
