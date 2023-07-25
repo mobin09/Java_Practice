@@ -1,6 +1,7 @@
 package jdbc;
 
 import java.sql.SQLException;
+import java.util.Scanner;
 
 import javax.sql.rowset.JdbcRowSet;
 import javax.sql.rowset.RowSetFactory;
@@ -40,7 +41,32 @@ class Demo15 {
 		System.out.println();
 		jrs.relative(-2);
 		System.out.println(jrs.getInt(1)+"\t"+jrs.getString(2)+"\t"+ jrs.getInt(3));
-				
+		
+		// since JdbcRowSet is by default updatabale ...so
+		
+		Scanner sc = new Scanner(System.in);
+		jrs.moveToInsertRow();
+		int k = 100;
+		while(true) {
+			System.out.println("Enter Your Salary");
+			Integer sal = sc.nextInt();
+			System.out.println("Enter Your name");
+			String name = sc.nextLine();
+			jrs.updateInt(1, k);
+			jrs.updateString(2, name);
+			jrs.updateInt(3, sal);
+			jrs.insertRow();
+			
+			System.out.println("Do You want to add new Rcordes [YES/NO]");
+			String desc = sc.next();
+			k++;
+			if(desc.equalsIgnoreCase("no")) {
+				break;
+			}
+						
+		}
+		
+		
 		
 	} catch (SQLException e) {
 		// TODO Auto-generated catch block
